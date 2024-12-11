@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp936">
+<title>computations_in_the article.html</title>
+<!-- Created by Maple 18.00, Windows 8 -->
+</head>
+<a href="computations_in_the article.html#MapleAutoBookmark1">computations_in_the article.mw</a>
+<ul>
+<li><a href="computations_in_the article.html#MapleAutoBookmark2">Lemma 9. &nbsp;Induction base: &nbsp;Derivation of &nbsp;J(2)</a>
+<li><a href="computations_in_the article.html#MapleAutoBookmark3">Lemma 9. &nbsp;Induction step case 1: Derivation of &nbsp;J(n) </a>
+<li><a href="computations_in_the article.html#MapleAutoBookmark4">Theorem 13. Generation of &nbsp;K=H(13,[5,4])-H(13,[6,1,1,1])</a>
+<li><a href="computations_in_the article.html#MapleAutoBookmark5">Theorem 13. Computation of K at (1,1,1,1,1,1,1,1,1,1,1,1,7/2)</a>
+</ul>
+<hr>
+<a name="MapleAutoBookmark1" />
+
+<body bgcolor="FFFFFF">
+<p align="center"><font color="#000000" size="5" face="SimSun"><strong>Inequalities among Symmetric Functions:
+<br>Counter-examples and New Conjectures</strong></font>&nbsp;</p>
+<p align="center"><font color="#000000" size="5" face="SimSun"><strong>Jia Xu and Yong Yao</strong></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="SimSun"><strong>&gt; </strong></font></td>
+<td valign="top"><font color="#78000e" size="3" face="SimSun"><strong>restart:
+<br>with(combinat):
+<br>
+<br>H:=proc(n,mu)
+<br>local na,sa,sb,ha,Ha,ca;
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;na := nops(mu);
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sa := [seq(Hsymnd(n,mu[j])[2],j=1..na)];
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ca := [seq(Hsymnd(n,mu[j])[1],j=1..na)];
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ha := product(sa[i],i=1..na);
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ha := ha/eval(ha,[seq(x[i]=1,i=1..n)]);
+<br>end:
+<br>
+<br>Hsymnd:=proc(n,d)
+<br>local ch,s1,es,hf;
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch := composition(n+d, n); 
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s1 := [seq(1, t = 1 .. n)];
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es := [seq(ch[t]-s1, t = 1 .. nops(ch))];
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hf := [nops(ch),add(product(x[i]^e[i], i = 1 .. n), e = es)];
+<br>end: 
+<br></td>
+</tr>
+</table></strong></font>&nbsp;</p>
+<dl style="margin-left:40px"><a name="MapleAutoBookmark2" />
+<p align="left"><font color="#000000" size="5" face="Serif"><strong>Lemma 9. &nbsp;Induction base: &nbsp;Derivation of &nbsp;J(2)</strong></font>&nbsp;</p>
+</dl>
+<dl style="margin-left:40px"><a name="MapleAutoBookmark3" />
+<p align="left"><font color="#000000" size="5" face="Serif"><strong>Lemma 9. &nbsp;Induction step case 1: Derivation of &nbsp;J(n) </strong></font>&nbsp;</p>
+</dl>
+<dl style="margin-left:40px"><a name="MapleAutoBookmark4" />
+<p align="left"><font color="#000000" size="5" face="Serif"><strong>Theorem 13. Generation of &nbsp;K=H(13,[5,4])-H(13,[6,1,1,1])</strong></font>&nbsp;</p>
+</dl>
+<dl style="margin-left:40px"><a name="MapleAutoBookmark5" />
+<p align="left"><font color="#000000" size="5" face="Serif"><strong>Theorem 13. Computation of K at (1,1,1,1,1,1,1,1,1,1,1,1,7/2)</strong></font>&nbsp;</p>
+</dl>
+<p align="left"><font color="#000000" size="3" face="SimSun"><img src="images/computations_in_the article_1.gif" width="14" height="14" alt="" align="center" border="0"></font>&nbsp;</p>
+</body>
+</html>
