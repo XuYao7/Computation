@@ -1,1 +1,10 @@
 *.mw linguist-language=Maple 
+*.md linguist-language=Maple 
+*.yml linguist-language=Maple
+*.html linguist-language=Maple 
+*.js linguist-language=Maple 
+*.xml linguist-language=Maple
+*.css linguist-language=Maple 
+*.sql linguist-language=Maple
+*.uml linguist-language=Maple
+*.cmd linguist-language=Maple
